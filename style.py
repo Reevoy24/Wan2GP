@@ -231,4 +231,11 @@ CSS = """
         }
 """
 
-PINFO_STYLE = "#PINFO, #PINFO th, #PINFO td {border: 1px solid #CCCCCC;background-color:#FFFFFF;color:black;}"
+PINFO_STYLE = (
+    "#PINFO, #PINFO th, #PINFO td {"
+    "border: 1px solid var(--border-color-primary, #CCCCCC);"
+    "background-color: var(--background-fill-primary, #FFFFFF);"
+    "color: var(--body-text-color, black);"
+    "}"
+)
+
