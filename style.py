@@ -239,3 +239,18 @@ PINFO_STYLE = (
     "}"
 )
 
+SUMMARY_CSS_DEFAULT = """
+.gr-accordion summary {
+    background-color: #1e293b;
+    color: white;
+}
+"""
+
+SUMMARY_CSS_GRADIO = """
+.gr-accordion summary {
+    background-color: #27272a;
+    color: white;
+}
+"""
+
+
