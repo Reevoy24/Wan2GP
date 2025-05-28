@@ -5870,6 +5870,10 @@ def create_ui():
             z-index: 2;
             pointer-events: none;
         }
+        summary {
+            background-color: var(--background-fill-primary);
+            color: var(--body-text-color);
+        }
 
     """
     UI_theme = server_config.get("UI_theme", "default")
