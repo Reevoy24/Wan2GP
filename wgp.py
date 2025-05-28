@@ -5870,11 +5870,13 @@ def create_ui():
             z-index: 2;
             pointer-events: none;
         }
+
         details {
             background-color: var(--background-fill-primary);
         }
         details summary {
             background-color: inherit;
+
             color: var(--body-text-color);
         }
 
