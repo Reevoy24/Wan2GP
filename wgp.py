@@ -39,7 +39,7 @@ logging.set_verbosity_error
 from tqdm import tqdm
 import requests
 global_queue_ref = []
-from style import CSS, PINFO_STYLE
+from style import CSS, PINFO_STYLE, SUMMARY_CSS_DEFAULT, SUMMARY_CSS_GRADIO
 AUTOSAVE_FILENAME = "queue.zip"
 PROMPT_VARS_MAX = 10
 
@@ -5644,8 +5644,10 @@ def create_ui():
     css = CSS
     UI_theme  = args.theme if len(args.theme) > 0 else UI_theme
     if UI_theme == "gradio":
+        css += SUMMARY_CSS_GRADIO
         theme = None
     else:
+        css += SUMMARY_CSS_DEFAULT
         theme = gr.themes.Soft(font=["Verdana"], primary_hue="sky", neutral_hue="slate", text_size="md")
 
     with gr.Blocks(css=css, theme=theme, title= "WanGP") as main:
